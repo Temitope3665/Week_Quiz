@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Quiz</string>
+    <string name="quiz_app">Quiz App</string>
+    <string name="right_answer">Right Answer</string>
+    <string name="word">Word</string>
+    <string name="enter_word">Enter word</string>
+</resources>

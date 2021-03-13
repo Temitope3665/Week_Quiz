@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quiz_app_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quiz_app"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/right_answer_background"
+        android:layout_marginTop="50dp"
+        android:hint="@string/right_answer"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Click on change to view word"
+        android:textColorHint="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/enter_word"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:imeOptions="actionDone"
+        android:hint="@string/enter_word"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:background="@drawable/enter_word_background"
+        android:padding="10dp"
+        android:inputType="text"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="change"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="check"
+            android:layout_marginStart="20dp"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
